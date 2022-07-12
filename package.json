@@ -1,0 +1,23 @@
+{
+  "name": "typescript-resolution-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "run-s :foo-lib:build :foo-app:build",
+    "build:types": "run-s :foo-lib:build:types :foo-app:build:types",
+    "clean": "run-p :foo-lib:clean :foo-app:clean",
+    ":foo-app:clean": "cd packages/foo-app && run-s clean",
+    ":foo-lib:clean": "cd packages/foo-lib && run-s clean",
+    ":foo-app:build": "cd packages/foo-app && run-s build",
+    ":foo-app:build:types": "cd packages/foo-app && run-s build:types",
+    ":foo-lib:build": "cd packages/foo-lib && run-s build",
+    ":foo-lib:build:types": "cd packages/foo-lib && run-s build:types"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "keywords": [],
+  "author": "Walker Burgin <walkerburgin@gmail.com>",
+  "license": "ISC"
+}

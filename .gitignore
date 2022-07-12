@@ -1,0 +1,51 @@
+# Eclipse
+.checkstyle
+.classpath
+.metadata
+.loadpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Mac OSX + Windows
+.DS_Store
+Thumbs.db
+
+# SublimeText, TextMate, Vim
+*.sublime-workspace
+*.sublime-project
+*.tmproj
+*.tmproject
+*.sw[op]
+
+# NPM
+npm-debug.log
+
+# awesome-typescript-loader
+.awcache
+
+# Projects
+*.css
+*.log
+*.map
+build
+dist
+types
+node_modules/
+
+# Yarn
+.yarnrc
+yarn
+yarn.lock
+
+# Gradle
+.gradle
+
+# Docs
+gh-pages-worktree/
